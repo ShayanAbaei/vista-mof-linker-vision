@@ -41,7 +41,7 @@ Direct exclusions:
 - Flexibility: `NumRotatableBonds`
 - Aromaticity: aromatic-atom/aromatic-ring count descriptors
 - H-bond donors: `NumHDonors`, `NHOHCount`
-- H-bond acceptors: `NumHAcceptors`, `NOCount`
+- H-bond acceptors: `NumHAcceptors_FrozenV201`, `NOCount`
 - Single-ring proxy: direct ring-count descriptors
 - Ring-rich (>6 rings) proxy: direct ring-count descriptors
 - Charge present: `NetFormalCharge`
@@ -56,7 +56,7 @@ The exact target rules are regenerated from the first MOFid linker:
 - rotatable bonds > 5
 - any aromatic atom
 - HBD > 2
-- HBA > 2
+- frozen RDKit NumHBA v2.0.1 count > 2
 - ring count == 1
 - ring count > 6
 - net formal charge != 0
