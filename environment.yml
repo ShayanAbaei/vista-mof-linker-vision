@@ -1,0 +1,18 @@
+name: vista
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.0.2
+      - pandas>=2.2,<2.4
+      - scikit-learn==1.6.1
+      - matplotlib==3.10.0
+      - pillow>=10.4,<12
+      - scipy>=1.14,<2
+      - tqdm>=4.66,<5
+      - tensorboard>=2.18,<3
+      - pyyaml>=6,<7
+      - pytest>=8,<9
+      - umap-learn>=0.5.7,<0.6

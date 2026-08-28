@@ -1,0 +1,11 @@
+{
+  "config": {
+    "warmup_start_factor": 0.1,
+    "warmup_epochs": 10,
+    "total_epochs": 50,
+    "min_lr_ratio": 0.01
+  },
+  "base_lr": 0.0001,
+  "backbone_lr_ratio": 0.1,
+  "n_epochs": 100
+}

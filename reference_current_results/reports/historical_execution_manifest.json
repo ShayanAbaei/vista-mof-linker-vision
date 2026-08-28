@@ -1,0 +1,62 @@
+{
+  "generated": "2026-06-22 08:16:58",
+  "seeds": {
+    "global": 42,
+    "python": 42,
+    "numpy": 42,
+    "torch": 42,
+    "cuda": 42
+  },
+  "ablation_seeds": [
+    42
+  ],
+  "dependencies": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "sklearn": "1.6.1",
+    "numpy": "2.0.2",
+    "matplotlib": "3.10.0",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "device": "cuda",
+  "label_names": [
+    "Hydrophobicity",
+    "Polarity",
+    "Flexibility",
+    "Aromaticity",
+    "Hydrogen-Bond Donors",
+    "Hydrogen-Bond Acceptors",
+    "Planarity (Single-Ring)",
+    "Macrocycle (>6 Rings)",
+    "Charge Present",
+    "Conjugation Present"
+  ],
+  "masked": false,
+  "data_available": true,
+  "checkpoint_available": false,
+  "flags": {
+    "RUN_TRAINING": false,
+    "RUN_BASELINES": true,
+    "RUN_ABLATIONS": true,
+    "RUN_LOSS_ABLATION": true,
+    "GENERATE_ALL_ATTENTION_PDFS": false
+  },
+  "label_image_splits": [
+    "validation",
+    "test"
+  ],
+  "outputs": {
+    "configs": "/content/drive/MyDrive/MOF/outputs/configs",
+    "checkpoints": "/content/drive/MyDrive/MOF/outputs/checkpoints",
+    "predictions": "/content/drive/MyDrive/MOF/outputs/predictions",
+    "metrics": "/content/drive/MyDrive/MOF/outputs/metrics",
+    "figures": "/content/drive/MyDrive/MOF/outputs/figures",
+    "attention_label_image": "/content/drive/MyDrive/MOF/outputs/attention_label_image",
+    "attention_label_label": "/content/drive/MyDrive/MOF/outputs/attention_label_label",
+    "ablations": "/content/drive/MyDrive/MOF/outputs/ablations",
+    "baselines": "/content/drive/MyDrive/MOF/outputs/baselines",
+    "reports": "/content/drive/MyDrive/MOF/outputs/reports"
+  }
+}

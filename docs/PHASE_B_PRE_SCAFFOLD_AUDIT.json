@@ -1,0 +1,259 @@
+{
+  "checks": [
+    {
+      "check": "Phase-A validation report exists",
+      "status": "PASS",
+      "detail": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\frozen\\PHASE_A_VALIDATION_REPORT.json"
+    },
+    {
+      "check": "Phase-A status PASS",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "Strict canonical overlap = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "Strict counts frozen",
+      "status": "PASS",
+      "detail": "{'train': 6590, 'test': 1412, 'validation': 1412}"
+    },
+    {
+      "check": "Zenodo metadata file exists",
+      "status": "PASS",
+      "detail": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\zenodo_record.json"
+    },
+    {
+      "check": "Zenodo record ID correct",
+      "status": "PASS",
+      "detail": "22141996"
+    },
+    {
+      "check": "Zenodo DOI correct",
+      "status": "PASS",
+      "detail": "10.5281/zenodo.22141996"
+    },
+    {
+      "check": "No Zenodo placeholders remain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "VISTA source modules found",
+      "status": "PASS",
+      "detail": "22 .py files"
+    },
+    {
+      "check": "All VISTA Python modules parse",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: swin_b default",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: embed 384",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: layers 6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: heads 12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: labels 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: epochs 50",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: patience 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: unfreeze 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: macro auprc selection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: base lr 1e-4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: backbone ratio .1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: weight decay 1e-2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: Swin torchvision",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: warmup 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: total epochs 50",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: min lr .01",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: ASL clip .005",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: threshold grid 200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: threshold objective f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Contract: original aug documented",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "warnings": [
+    "45 legacy intra-module imports detected; preserve with bootstrap for E0/E1.",
+    "3 hard-coded CUDA calls detected; inspect before EPFL."
+  ],
+  "findings": {
+    "legacy_local_imports": [
+      "attention_label_image.py:26: from attention import label_to_image_maps, label_to_image_mass, rollout_label_to_image_maps",
+      "attention_label_image.py:96: from inference import iter_attention",
+      "attention_label_image.py:137: from plotting import academic_rc, save_figure, SINGLE_COL_W",
+      "attention_label_image.py:223: from inference import iter_attention, dataset_sample_ids, dataset_filenames, base_dataset",
+      "attention_label_label.py:84: from inference import iter_attention",
+      "attention_label_label.py:159: from inference import iter_attention, dataset_sample_ids",
+      "baselines.py:109: from backbone import create_backbone",
+      "baselines.py:115: from backbone import create_backbone",
+      "baselines.py:129: from seeding import set_all_seeds",
+      "baselines.py:130: from optim import build_optimizer, build_scheduler, LRScheduleConfig",
+      "baselines.py:131: from train import MultiLabelTrainer",
+      "baselines.py:132: from loss import AsymmetricLossOptimized",
+      "baselines.py:133: from experiments import evaluate_split",
+      "baselines.py:165: from seeding import set_all_seeds",
+      "baselines.py:166: from optim import build_optimizer, build_scheduler, LRScheduleConfig",
+      "baselines.py:167: from train import MultiLabelTrainer",
+      "baselines.py:168: from loss import AsymmetricLossOptimized",
+      "baselines.py:169: from inference import collect_predictions",
+      "baselines.py:198: from evaluation import select_thresholds, compute_metric_table",
+      "baselines.py:216: from experiments import aggregate_seeds",
+      "build_notebook.py:168: from masking import AttentionMaskConfig",
+      "build_notebook.py:169: from data import image_augmentation, MultiLabelMoleculeDataset",
+      "build_notebook.py:446: from ml_vit import MultiLabelVisionTransformer",
+      "build_notebook.py:515: from train import MultiLabelTrainer",
+      "checkpointing.py:60: from backbone import create_backbone, BackboneWithModel",
+      "checkpointing.py:61: from ml_vit import MultiLabelVisionTransformer",
+      "checkpointing.py:62: from masking import AttentionMaskConfig",
+      "compare_plots.py:30: from plotting import academic_rc, save_figure, symmetric_robust_limit, DIVERGING_CMAP, SINGLE_COL_W",
+      "compare_plots.py:65: from plotting import academic_rc, save_figure, SINGLE_COL_W, PRIMARY",
+      "compare_plots.py:99: from plotting import academic_rc, save_figure, PALETTE, DOUBLE_COL_W",
+      "evaluation.py:132: from train import MultiLabelMetrics",
+      "evaluation.py:190: from plotting import academic_rc, save_figure, SEQUENTIAL_CMAP, DOUBLE_COL_W",
+      "experiments.py:29: from masking import AttentionMaskConfig",
+      "experiments.py:75: from backbone import create_backbone, BackboneWithModel",
+      "experiments.py:76: from ml_vit import MultiLabelVisionTransformer",
+      "experiments.py:98: from loss import AsymmetricLossOptimized, BCELoss",
+      "experiments.py:205: from inference import collect_predictions",
+      "experiments.py:206: from evaluation import select_thresholds, compute_metric_table",
+      "experiments.py:231: from seeding import set_all_seeds",
+      "experiments.py:232: from optim import build_optimizer, build_scheduler, LRScheduleConfig",
+      "experiments.py:233: from train import MultiLabelTrainer",
+      "label_groups.py:112: from plotting import academic_rc, save_figure, SPLIT_COLORS, PALETTE, DOUBLE_COL_W",
+      "label_label_plots.py:59: from plotting import (academic_rc, save_figure, symmetric_robust_limit,",
+      "label_label_plots.py:158: from plotting import academic_rc, save_figure, SEQUENTIAL_CMAP, SINGLE_COL_W",
+      "ml_vit.py:8: from masking import ("
+    ],
+    "hardcoded_windows_paths": [],
+    "hardcoded_cuda_calls": [
+      "loss.py:217: There is intentionally **no** hard-coded ``.to(\"cuda\")`` so the loss is",
+      "loss.py:271: # these on GPU/CPU (no hard-coded ``.to(\"cuda\")``).",
+      "train.py:159: live on the right device (portable; no hard-coded ``.to('cuda')``)."
+    ],
+    "source_sha256": {
+      "src\\vista\\__init__.py": "afaca05d74f96a383ff6c5515588a32ecc2f5ae67e71a023ff5d0ea5bed1611b",
+      "src\\vista\\attention.py": "e52fc1e868cf87c080bdc9405c9a4e9f20b8ea78e752eefb17ae585f132a91d8",
+      "src\\vista\\attention_label_image.py": "63a23d03a084282eaddc9db2c732f544fd192bc32d78d7c4cb6d87ec1f604e30",
+      "src\\vista\\attention_label_label.py": "e3f41376f2ed060bbad4784bd1580d71502443af68f5f9fefba44dbf9354ef48",
+      "src\\vista\\backbone.py": "82ff5b326ab26f4a6a0803daf77bba194598f0e010a190974548eae02452b09c",
+      "src\\vista\\baselines.py": "c6dbf3f8249127a94c53c96aafaebc8038222a9c9aafce3fe1293fdf1154081a",
+      "src\\vista\\build_notebook.py": "a316ee4202f021b1b82ba5bcef0f375b5cac95a9a5fe170a1c3bf8f7f2119fdb",
+      "src\\vista\\checkpointing.py": "581af0be1708a1add3ccf109750f769e03ff44469bafaca6fd945833133aecb2",
+      "src\\vista\\compare_plots.py": "48fdec36204eea7136f76281b2fa4957963e7782f122a0f90f6caae63711cdaa",
+      "src\\vista\\data.py": "b7c3766940c6fabd8c799c039080446a3e854d78ddb7594e0ac2df12c5932e6e",
+      "src\\vista\\evaluation.py": "be1aca52f95867e74de3aabec1a6bcd7d3210763aee868e2eb71bbfa3f6a75b1",
+      "src\\vista\\experiments.py": "b9dcc6a68c2ff4395c6de4bd97432ee353f9c86b5dd8e7139a212e738043f2be",
+      "src\\vista\\inference.py": "a3cd26de788d30201ea2536a4332d5757f52704a8725444854bc66cad87dcc30",
+      "src\\vista\\label_groups.py": "ecc209b1f0feec8168d23d79e214114c3433a42238119b197420da59abb47c4c",
+      "src\\vista\\label_label_plots.py": "010a800621cc8f6c71a4d5060ac72c356c1b1ccf3316068611d46a5eacb9b4be",
+      "src\\vista\\loss.py": "3100b1719a02e744a24eb2ff7a7c681bc670d0cfcc871c9090833bd82b9cad99",
+      "src\\vista\\masking.py": "7ed8acf68eaba59ab71d0e7678a231fc1cd202493b903b5c63e46d8d13e3b40c",
+      "src\\vista\\ml_vit.py": "94c0d6af880b7f1b535779b0b0cdd4242038631ff48cfe2587c357c141851a15",
+      "src\\vista\\optim.py": "5009eb8d7214460c9ce5826cc0a4a9622eac1f77f23b6a0aece620a00b86c19c",
+      "src\\vista\\plotting.py": "5637848f51592bf7b01145542741dce6ca46112a925fb5c04452913890ab5904",
+      "src\\vista\\seeding.py": "4924c80b5500d2ff9ae449dbe3c9e2a210259928421610efe53756f5b98849dd",
+      "src\\vista\\train.py": "469ea3f4114be26db4c66d5f555869a5a3acbe5c29292d75dcf290df87e9837b"
+    },
+    "contract_checks": {
+      "swin_b default": true,
+      "embed 384": true,
+      "layers 6": true,
+      "heads 12": true,
+      "labels 10": true,
+      "epochs 50": true,
+      "patience 10": true,
+      "unfreeze 10": true,
+      "macro auprc selection": true,
+      "base lr 1e-4": true,
+      "backbone ratio .1": true,
+      "weight decay 1e-2": true,
+      "Swin torchvision": true,
+      "warmup 10": true,
+      "total epochs 50": true,
+      "min lr .01": true,
+      "ASL clip .005": true,
+      "threshold grid 200": true,
+      "threshold objective f1": true,
+      "original aug documented": true
+    }
+  }
+}

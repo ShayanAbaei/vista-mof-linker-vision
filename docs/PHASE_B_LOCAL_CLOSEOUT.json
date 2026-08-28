@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "warnings": [],
+  "gpu_runtime_validation": "DEFERRED_TO_EPFL",
+  "local_torch_required": false
+}
