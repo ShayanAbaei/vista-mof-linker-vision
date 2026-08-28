@@ -1,0 +1,45 @@
+run:
+  experiment_name: vista_groupdisjoint_chemistry_safe
+  seed: 17
+
+data:
+  manifest: data/frozen/canonical_group_disjoint_split.csv
+  image_dir: data/images_224
+  image_size: 224
+  require_canonical_disjoint: true
+
+model:
+  backbone: swin_b
+  pretrained: true
+  embed_dim: 384
+  n_encoder_layers: 6
+  n_heads: 12
+  n_labels: 10
+  attention_mask_mode: none
+
+augmentation:
+  chemistry_safe: true
+
+training:
+  epochs: 50
+  batch_size: 32
+  num_workers: 0
+  patience: 10
+  frozen_epochs: 10
+  base_lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  weight_decay: 1.0e-2
+  warmup_start_factor: 0.1
+  warmup_epochs: 10
+  min_lr_ratio: 0.01
+  selection_metric: macro_auprc
+
+loss:
+  type: frequency_adapted_asl
+  clip: 0.005
+  frequencies_from: train
+
+evaluation:
+  threshold_source: validation
+  threshold_objective: f1
+  threshold_grid_points: 200
