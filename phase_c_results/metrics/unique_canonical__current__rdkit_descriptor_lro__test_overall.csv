@@ -1,0 +1,2 @@
+split_scheme,model,evaluation_split,weighting,macro_precision,macro_recall,macro_f1,macro_accuracy,macro_balanced_accuracy,macro_specificity,macro_auprc,macro_auroc,micro_precision,micro_recall,micro_f1,micro_auprc,subset_accuracy,hamming_loss
+current,rdkit_descriptor_lro,test,unique_canonical,0.912551403932512,0.9207510153438797,0.9164867937213195,0.9632275132275133,0.9352303434887658,0.9497096716336518,0.9463198907116285,0.9827991447718796,0.9504929275610802,0.9597489720839645,0.9550985248196403,0.9915772495470517,0.6869488536155203,0.03677248677248677

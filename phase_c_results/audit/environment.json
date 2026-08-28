@@ -1,0 +1,13 @@
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\abaei\\anaconda3\\envs\\mofenv\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "conda_default_env": "mofenv",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "rdkit": "2026.03.3",
+  "sklearn": "1.9.0",
+  "matplotlib": "3.11.0",
+  "scipy": "1.17.1",
+  "git_commit": "139e0997053aa9f6a142d4af672ec18b2dc5bb66"
+}

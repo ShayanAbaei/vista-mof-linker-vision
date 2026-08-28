@@ -1,0 +1,9 @@
+{
+  "runtime_rdkit": "2026.03.3",
+  "runtime_numhba_version": "2.0.2",
+  "frozen_numhba_semantics": "RDKit NumHBA v2.0.1 SMARTS (Release_2025_09_4)",
+  "frozen_hba_rule": "frozen_hba_count > 2",
+  "runtime_vs_frozen_hba_count_differences": 718,
+  "frozen_rule_label_mismatches": 0,
+  "interpretation": "The VISTA labels are frozen historical targets. Newer RDKit versions may produce different HBA counts after the 2026.03 N-heterocycle bug fix. Phase C therefore audits HBA using the embedded historical v2.0.1 SMARTS and records runtime descriptor drift separately."
+}
