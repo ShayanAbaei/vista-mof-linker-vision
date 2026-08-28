@@ -1,0 +1,26 @@
+{
+  "LABEL_NAMES": [
+    "Hydrophobicity",
+    "Polarity",
+    "Flexibility",
+    "Aromaticity",
+    "Hydrogen-Bond Donors",
+    "Hydrogen-Bond Acceptors",
+    "Planarity (Single-Ring)",
+    "Macrocycle (>6 Rings)",
+    "Charge Present",
+    "Conjugation Present"
+  ],
+  "masked": false,
+  "ATTENTION_LAYERS": "last",
+  "SELECTION_METRIC": "macro_auprc",
+  "MIN_SUPPORT": 10,
+  "SEED": 42,
+  "ABLATION_SEEDS": [
+    42
+  ],
+  "LABEL_IMAGE_SPLITS": [
+    "validation",
+    "test"
+  ]
+}

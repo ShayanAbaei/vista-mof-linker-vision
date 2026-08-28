@@ -1,0 +1,10 @@
+label: Hydrogen-Bond Donors
+sample_id: qmof_4696
+split: test
+case_type: true_positive
+prob: 0.97615075
+threshold: 0.5877638190954774
+gt: 1
+pred: 1
+selected_linker_smiles: OC1C(O)C(O)C(C(C1O)O)O
+qmof_id: qmof-d16a680

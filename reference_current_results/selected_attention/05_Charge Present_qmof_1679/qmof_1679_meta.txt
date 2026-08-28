@@ -1,0 +1,10 @@
+label: Charge Present
+sample_id: qmof_1679
+split: test
+case_type: true_positive
+prob: 0.9952856
+threshold: 0.4373115577889447
+gt: 1
+pred: 1
+selected_linker_smiles: [O-]C(=O)C=CC=CC(=O)[O-]
+qmof_id: qmof-3bddfea

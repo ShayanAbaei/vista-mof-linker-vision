@@ -1,0 +1,31 @@
+split,split_display,label,positive_count,total_count
+train,Train,Hydrophobicity,1022,6590
+train,Train,Polarity,2550,6590
+train,Train,Flexibility,979,6590
+train,Train,Aromaticity,4641,6590
+train,Train,H-bond donors,294,6590
+train,Train,H-bond acceptors,5366,6590
+train,Train,Planarity,1833,6590
+train,Train,Macrocycle,138,6590
+train,Train,Charge,3826,6590
+train,Train,Conjugation,5542,6590
+validation,Validation,Hydrophobicity,217,1412
+validation,Validation,Polarity,543,1412
+validation,Validation,Flexibility,210,1412
+validation,Validation,Aromaticity,987,1412
+validation,Validation,H-bond donors,62,1412
+validation,Validation,H-bond acceptors,1144,1412
+validation,Validation,Planarity,388,1412
+validation,Validation,Macrocycle,29,1412
+validation,Validation,Charge,814,1412
+validation,Validation,Conjugation,1177,1412
+test,Test,Hydrophobicity,218,1412
+test,Test,Polarity,546,1412
+test,Test,Flexibility,210,1412
+test,Test,Aromaticity,992,1412
+test,Test,H-bond donors,62,1412
+test,Test,H-bond acceptors,1149,1412
+test,Test,Planarity,392,1412
+test,Test,Macrocycle,29,1412
+test,Test,Charge,819,1412
+test,Test,Conjugation,1187,1412

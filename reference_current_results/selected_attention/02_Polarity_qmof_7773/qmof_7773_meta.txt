@@ -1,0 +1,10 @@
+label: Polarity
+sample_id: qmof_7773
+split: test
+case_type: true_positive
+prob: 0.9986681
+threshold: 0.512537688442211
+gt: 1
+pred: 1
+selected_linker_smiles: O=N(=O)c1c(O)c(C(=O)[O-])c(c(c1C(=O)[O-])O)O
+qmof_id: qmof-00980e4

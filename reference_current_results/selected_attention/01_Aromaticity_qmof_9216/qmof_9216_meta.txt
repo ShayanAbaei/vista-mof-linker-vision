@@ -1,0 +1,10 @@
+label: Aromaticity
+sample_id: qmof_9216
+split: test
+case_type: true_positive
+prob: 0.99054635
+threshold: 0.5075226130653266
+gt: 1
+pred: 1
+selected_linker_smiles: OC(=O)c1cc(cc2c1cc(cc2C(=O)O)C(=O)[O-])C(=O)[O-]
+qmof_id: qmof-48c7a7e

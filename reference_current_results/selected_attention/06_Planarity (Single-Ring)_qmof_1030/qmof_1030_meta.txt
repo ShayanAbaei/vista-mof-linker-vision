@@ -1,0 +1,10 @@
+label: Planarity (Single-Ring)
+sample_id: qmof_1030
+split: test
+case_type: true_positive
+prob: 0.9961926
+threshold: 0.5977939698492463
+gt: 1
+pred: 1
+selected_linker_smiles: [O-]C(=O)c1ccc(cn1)C(=O)[O-]
+qmof_id: qmof-de03476
