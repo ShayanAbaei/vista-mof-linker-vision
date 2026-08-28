@@ -1,4 +1,4 @@
-# VISTA
+﻿# VISTA
 
 **VISTA: Chemically Auditable Vision Transformers for Multi-Label Annotation of MOF Linker Functionality**
 
@@ -16,8 +16,8 @@ Current sample-level values are retained only as **reference results**, not as e
 
 The frozen dataset is archived separately on Zenodo.
 
-**Zenodo DOI:** `ZENODO_DOI_TODO`  
-**Zenodo record ID:** `ZENODO_RECORD_ID_TODO`
+**Zenodo DOI:** `10.5281/zenodo.YOUR_DOI_NUMBER`  
+**Zenodo record ID:** `YOUR_RECORD_ID`
 
 The heavy molecular-image archive is intentionally not tracked in normal Git history.
 
@@ -25,26 +25,26 @@ See [`data/README.md`](data/README.md).
 
 ## Repository structure
 
-- `data/` — source and frozen manifests; no extracted 9,414-image corpus in Git.
-- `src/vista/` — imported authoritative VISTA source modules, pending reproducibility refactor.
-- `reference_current_results/` — current sample-level predictions, metrics, and selected source artifacts.
-- `figures/` — figure source tables/current reference outputs.
-- `scripts/` — dataset validation, download, and later reproducible execution entry points.
-- `docs/` — project state, dataset/model documentation, and EPFL handover documentation.
-- `manuscript/` — reserved for the verified latest Overleaf source.
+- `data/` â€” source and frozen manifests; no extracted 9,414-image corpus in Git.
+- `src/vista/` â€” imported authoritative VISTA source modules, pending reproducibility refactor.
+- `reference_current_results/` â€” current sample-level predictions, metrics, and selected source artifacts.
+- `figures/` â€” figure source tables/current reference outputs.
+- `scripts/` â€” dataset validation, download, and later reproducible execution entry points.
+- `docs/` â€” project state, dataset/model documentation, and EPFL handover documentation.
+- `manuscript/` â€” reserved for the verified latest Overleaf source.
 
 ## Ten deterministic proxy labels
 
-1. Hydrophobicity — Crippen logP > 2.5
-2. Polarity — TPSA > 90
-3. Flexibility — rotatable bonds > 5
-4. Aromaticity — at least one aromatic atom
-5. H-bond donors — RDKit HBD count > 2
-6. H-bond acceptors — RDKit HBA count > 2
-7. Single-ring proxy — ring count = 1
-8. Ring-rich (>6 rings) proxy — ring count > 6
-9. Charge present — net formal charge != 0
-10. Conjugation present — any bond order > 1.5
+1. Hydrophobicity â€” Crippen logP > 2.5
+2. Polarity â€” TPSA > 90
+3. Flexibility â€” rotatable bonds > 5
+4. Aromaticity â€” at least one aromatic atom
+5. H-bond donors â€” RDKit HBD count > 2
+6. H-bond acceptors â€” RDKit HBA count > 2
+7. Single-ring proxy â€” ring count = 1
+8. Ring-rich (>6 rings) proxy â€” ring count > 6
+9. Charge present â€” net formal charge != 0
+10. Conjugation present â€” any bond order > 1.5
 
 These labels are reproducible **proxy annotations**, not experimental measurements or universal chemical definitions.
 
@@ -76,3 +76,5 @@ A final paper citation will be added after publication. See [`CITATION.cff`](CIT
 ## License
 
 Dataset licensing is documented with the Zenodo record. A software license for the code will be finalized with the code authors before the repository is made public.
+
+
