@@ -16,8 +16,8 @@ Current sample-level values are retained only as **reference results**, not as e
 
 The frozen dataset is archived separately on Zenodo.
 
-**Zenodo DOI:** `10.5281/zenodo.YOUR_DOI_NUMBER`  
-**Zenodo record ID:** `YOUR_RECORD_ID`
+**Zenodo DOI:** `10.5281/zenodo.22141996`  
+**Zenodo record:** https://zenodo.org/records/22141996
 
 The heavy molecular-image archive is intentionally not tracked in normal Git history.
 
