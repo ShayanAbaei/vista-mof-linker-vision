@@ -1,4 +1,4 @@
-﻿# VISTA data layout
+# VISTA data layout
 
 The heavy molecular-image archive is intentionally stored outside normal Git.
 
@@ -9,10 +9,10 @@ Zenodo record: https://zenodo.org/records/22141996
 
 ## Local folders
 
-- `source/` â€” curated original CSV/audit inputs imported from the historical VISTA workspace.
-- `frozen/` â€” normalized manifests, label definitions, image manifest, validation report, and checksums produced by `scripts/validate_dataset.py`.
-- `raw/` â€” ignored local download location for `vista_images_9414.zip`.
-- `images_224/` â€” ignored extracted molecular images.
+- `source/` — curated original CSV/audit inputs imported from the historical VISTA workspace.
+- `frozen/` — normalized manifests, label definitions, image manifest, validation report, and checksums produced by `scripts/validate_dataset.py`.
+- `raw/` — ignored local download location for `vista_images_9414.zip`.
+- `images_224/` — ignored extracted molecular images.
 
 ## Validation
 
