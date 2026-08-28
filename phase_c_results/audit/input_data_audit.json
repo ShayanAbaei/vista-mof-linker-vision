@@ -1,0 +1,25 @@
+{
+  "n_samples": 9414,
+  "unique_image_names": 9414,
+  "unique_canonical_first_linkers": 5727,
+  "rule_mismatches": {
+    "hydrophobicity": 0,
+    "polarity": 0,
+    "flexibility": 0,
+    "aromaticity": 0,
+    "h_bond_donors": 0,
+    "h_bond_acceptors": 0,
+    "planarity_single_ring": 0,
+    "macrocycle_gt6_rings": 0,
+    "charge_present": 0,
+    "conjugation_present": 0
+  },
+  "current_cross_split_canonical_groups": 598,
+  "strict_cross_split_canonical_groups": 0,
+  "input_sha256": {
+    "master": "d66741bc3ec7413745ae150857c81dc36a8d04304d267159c4ced0600b8edae5",
+    "compact_labels": "4d99cd8802b81ee1b49968d77ef95ec9169eb9fc7dd95d0c838cb4393b0a102b",
+    "current_manifest": "df81dfc31286ef8dd50276277263dd0c782ca1309fd0344c48c87838830bf6d9",
+    "strict_manifest": "2a166974b31cf2fda5f417ed7f50fda3251bbca4919b8b6e4f6aac15c34ab164"
+  }
+}

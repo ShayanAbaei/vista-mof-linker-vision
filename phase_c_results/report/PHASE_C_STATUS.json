@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "gpu_required": false,
+  "torch_required": false
+}

@@ -65,3 +65,7 @@ figures/generated/
 *.key
 credentials*
 secrets*
+
+# VISTA Phase C local caches/logs
+phase_c_results/cache/
+phase_c_results/logs/

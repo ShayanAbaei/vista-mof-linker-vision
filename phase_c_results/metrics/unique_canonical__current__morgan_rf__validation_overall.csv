@@ -1,0 +1,2 @@
+split_scheme,model,evaluation_split,weighting,macro_precision,macro_recall,macro_f1,macro_accuracy,macro_balanced_accuracy,macro_specificity,macro_auprc,macro_auroc,micro_precision,micro_recall,micro_f1,micro_auprc,subset_accuracy,hamming_loss
+current,morgan_rf,validation,unique_canonical,0.8528194498711745,0.872995208002912,0.8620619071140796,0.9540139616055846,0.9074300114430492,0.9418648148831863,0.8831132519190985,0.9737548494581139,0.9341745531019979,0.9540378006872853,0.9440017001381362,0.9875427209313234,0.6570680628272252,0.045986038394415354

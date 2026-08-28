@@ -1,0 +1,77 @@
+{
+  "phase": "C",
+  "profile": "standard",
+  "git_commit": "139e0997053aa9f6a142d4af672ec18b2dc5bb66",
+  "environment": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\abaei\\anaconda3\\envs\\mofenv\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "conda_default_env": "mofenv",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "rdkit": "2026.03.3",
+    "sklearn": "1.9.0",
+    "matplotlib": "3.11.0",
+    "scipy": "1.17.1",
+    "git_commit": "139e0997053aa9f6a142d4af672ec18b2dc5bb66"
+  },
+  "config": {
+    "phase": "C",
+    "environment_name": "mofenv",
+    "data": {
+      "master": "data/source/qmof_with_12_labels_final_cleaned.csv",
+      "compact_labels": "data/source/Data.csv",
+      "current_manifest": "data/frozen/current_sample_split.csv",
+      "strict_manifest": "data/frozen/canonical_group_disjoint_split.csv",
+      "historical_test_predictions": "reference_current_results/predictions/test_predictions.csv"
+    },
+    "fingerprint": {
+      "radius": 2,
+      "n_bits": 2048,
+      "include_chirality": false,
+      "use_bond_types": true
+    },
+    "model_selection": {
+      "criterion": "validation_macro_auprc",
+      "threshold_objective": "validation_f1",
+      "threshold_grid_points": 200
+    },
+    "random_seeds": {
+      "models": 42,
+      "bootstrap": 20260828
+    },
+    "bootstrap": {
+      "n_resamples_standard": 2000,
+      "confidence": 0.95
+    },
+    "outputs": {
+      "root": "phase_c_results"
+    }
+  },
+  "input_audit": {
+    "n_samples": 9414,
+    "unique_image_names": 9414,
+    "unique_canonical_first_linkers": 5727,
+    "rule_mismatches": {
+      "hydrophobicity": 0,
+      "polarity": 0,
+      "flexibility": 0,
+      "aromaticity": 0,
+      "h_bond_donors": 0,
+      "h_bond_acceptors": 0,
+      "planarity_single_ring": 0,
+      "macrocycle_gt6_rings": 0,
+      "charge_present": 0,
+      "conjugation_present": 0
+    },
+    "current_cross_split_canonical_groups": 598,
+    "strict_cross_split_canonical_groups": 0,
+    "input_sha256": {
+      "master": "d66741bc3ec7413745ae150857c81dc36a8d04304d267159c4ced0600b8edae5",
+      "compact_labels": "4d99cd8802b81ee1b49968d77ef95ec9169eb9fc7dd95d0c838cb4393b0a102b",
+      "current_manifest": "df81dfc31286ef8dd50276277263dd0c782ca1309fd0344c48c87838830bf6d9",
+      "strict_manifest": "2a166974b31cf2fda5f417ed7f50fda3251bbca4919b8b6e4f6aac15c34ab164"
+    }
+  },
+  "generated_at_unix": 1787922695.3142285
+}

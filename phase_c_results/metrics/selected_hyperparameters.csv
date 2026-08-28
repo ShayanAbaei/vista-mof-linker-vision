@@ -1,0 +1,7 @@
+split_scheme,model,selection_split,selection_metric,selected_params,selected_val_macro_auprc
+current,morgan_logreg,validation,macro_auprc,"{""C"": 1.0, ""class_weight"": null}",0.899469018480111
+current,morgan_rf,validation,macro_auprc,"{""class_weight"": ""balanced_subsample"", ""fit_mode"": ""independent_per_label"", ""max_depth"": null, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 200}",0.8899533894847023
+current,rdkit_descriptor_lro,validation,macro_auprc,"{""C"": 10.0, ""class_weight"": null}",0.9261419294536101
+strict,morgan_logreg,validation,macro_auprc,"{""C"": 1.0, ""class_weight"": null}",0.9362875786040821
+strict,morgan_rf,validation,macro_auprc,"{""class_weight"": ""balanced_subsample"", ""fit_mode"": ""independent_per_label"", ""max_depth"": null, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 200}",0.8857020883175831
+strict,rdkit_descriptor_lro,validation,macro_auprc,"{""C"": 10.0, ""class_weight"": null}",0.9389165200849883

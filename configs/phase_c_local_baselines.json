@@ -1,0 +1,33 @@
+{
+  "phase": "C",
+  "environment_name": "mofenv",
+  "data": {
+    "master": "data/source/qmof_with_12_labels_final_cleaned.csv",
+    "compact_labels": "data/source/Data.csv",
+    "current_manifest": "data/frozen/current_sample_split.csv",
+    "strict_manifest": "data/frozen/canonical_group_disjoint_split.csv",
+    "historical_test_predictions": "reference_current_results/predictions/test_predictions.csv"
+  },
+  "fingerprint": {
+    "radius": 2,
+    "n_bits": 2048,
+    "include_chirality": false,
+    "use_bond_types": true
+  },
+  "model_selection": {
+    "criterion": "validation_macro_auprc",
+    "threshold_objective": "validation_f1",
+    "threshold_grid_points": 200
+  },
+  "random_seeds": {
+    "models": 42,
+    "bootstrap": 20260828
+  },
+  "bootstrap": {
+    "n_resamples_standard": 2000,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "root": "phase_c_results"
+  }
+}
