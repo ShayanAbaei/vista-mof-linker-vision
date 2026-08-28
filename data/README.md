@@ -4,8 +4,8 @@ The heavy molecular-image archive is intentionally stored outside normal Git.
 
 ## Frozen dataset record
 
-Zenodo DOI: `10.5281/zenodo.YOUR_DOI_NUMBER`  
-Zenodo record ID: `YOUR_RECORD_ID`
+Zenodo DOI: `10.5281/zenodo.22141996`  
+Zenodo record: https://zenodo.org/records/22141996
 
 ## Local folders
 
