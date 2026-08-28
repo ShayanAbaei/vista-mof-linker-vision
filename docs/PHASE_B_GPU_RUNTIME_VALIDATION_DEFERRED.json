@@ -1,0 +1,18 @@
+{
+  "status": "DEFERRED_TO_EPFL",
+  "reason": "Local Windows environment intentionally has no PyTorch/torchvision installed.",
+  "local_python": "3.11 environment observed during Phase B",
+  "required_epfl_runtime_checks": [
+    "import torch and torchvision",
+    "torch.cuda.is_available()",
+    "two RTX A6000 visible",
+    "instantiate MultiLabelVisionTransformer",
+    "fake 7x7x1024 -> logits (1,10)",
+    "six attention layers with shape (1,12,59,59)",
+    "instantiate pretrained torchvision Swin-B",
+    "one-batch forward/backward at batch size 32",
+    "checkpoint save/load round-trip",
+    "run full pytest suite in the EPFL environment"
+  ],
+  "scientific_training_allowed_before_runtime_gate": false
+}

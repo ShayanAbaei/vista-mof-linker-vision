@@ -1,0 +1,13 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.2",
+  "pandas": "3.0.1",
+  "sklearn": "1.8.0",
+  "matplotlib": "3.10.8",
+  "PIL": "12.3.0",
+  "torch": "NOT_AVAILABLE: ModuleNotFoundError: No module named 'torch'",
+  "torchvision": "NOT_AVAILABLE: ModuleNotFoundError: No module named 'torchvision'",
+  "torch_cuda_error": "ModuleNotFoundError(\"No module named 'torch'\")",
+  "git_commit": "ddbfe0d27b5ac161d33e515da5485723512e695f"
+}

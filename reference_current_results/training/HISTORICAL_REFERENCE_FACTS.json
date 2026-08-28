@@ -1,0 +1,26 @@
+{
+  "executed_epochs": 50,
+  "last_epoch": 50,
+  "best_epoch_by_val_macro_auprc": 44,
+  "best_val_macro_auprc": 0.9777503420277581,
+  "best_val_loss": 0.009231095005654626,
+  "last_recorded_head_lr": 1.0000000000000002e-06,
+  "historical_seed": 42,
+  "historical_ablation_seeds": [
+    42
+  ],
+  "historical_dependencies": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "sklearn": "1.6.1",
+    "numpy": "2.0.2",
+    "matplotlib": "3.10.0",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "historical_checkpoint_available_generic_slot": false,
+  "lr_plot_rows_configured_n_epochs": 100,
+  "scheduler_total_epochs": 50,
+  "interpretation": "The executed history contains 50 epochs. The historical LR plot was exported for 100 rows but the scheduler reaches its configured minimum at epoch 50. Therefore 50 epochs is the executed training contract."
+}

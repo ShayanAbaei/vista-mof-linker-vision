@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vista-mof-linker-vision"
+version = "0.9.0"
+description = "VISTA reproducibility and execution package for MOF linker image annotation"
+requires-python = ">=3.12,<3.13"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
