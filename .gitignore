@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+conda-bld/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Heavy raw/extracted data
+data/raw/
+data/images_224/
+*.7z
+*.tar
+*.tar.gz
+
+# Do not casually commit arbitrary project ZIP backups
+*.zip
+
+# Models / serialization
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.joblib
+*.pkl
+*.pickle
+
+# Training outputs
+runs/
+outputs/
+checkpoints/
+logs/
+wandb/
+tensorboard/
+slurm-*.out
+slurm-*.err
+
+# Generated plotting outputs
+figures/generated/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*

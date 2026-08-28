@@ -1,0 +1,529 @@
+{
+  "generated_at": "2026-08-28T12:35:13",
+  "historical_source_root": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista",
+  "clean_repo_root": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision",
+  "files_copied": 104,
+  "image_zip_copied_to_repo": false,
+  "copied": [
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\.gitignore",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\.gitignore",
+      "size_bytes": 685
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\CITATION.cff",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\CITATION.cff",
+      "size_bytes": 607
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\configs\\README.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\configs\\README.md",
+      "size_bytes": 243
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\data\\README.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\README.md",
+      "size_bytes": 1066
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\docs\\DATASET_CARD.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\docs\\DATASET_CARD.md",
+      "size_bytes": 1570
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\docs\\PROJECT_STATE.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\docs\\PROJECT_STATE.md",
+      "size_bytes": 874
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\manuscript\\README.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\manuscript\\README.md",
+      "size_bytes": 346
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\README.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\README.md",
+      "size_bytes": 3512
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\templates\\repo\\tests\\README.md",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\tests\\README.md",
+      "size_bytes": 237
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Data.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\Data.csv",
+      "size_bytes": 328603
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\qmof_with_12_labels_final_cleaned.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\qmof_with_12_labels_final_cleaned.csv",
+      "size_bytes": 4954465
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\current_split_label_prevalence.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\current_split_label_prevalence.csv",
+      "size_bytes": 2719
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\current_split_leakage_by_group_all_linkers.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\current_split_leakage_by_group_all_linkers.csv",
+      "size_bytes": 1452195
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\current_split_leakage_by_group_first_linker.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\current_split_leakage_by_group_first_linker.csv",
+      "size_bytes": 814489
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\current_split_master_with_linker_keys.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\current_split_master_with_linker_keys.csv",
+      "size_bytes": 7727524
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\duplicate_groups_by_canonical_all_linker_signature.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\duplicate_groups_by_canonical_all_linker_signature.csv",
+      "size_bytes": 6538
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\duplicate_groups_by_canonical_first_linker.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\duplicate_groups_by_canonical_first_linker.csv",
+      "size_bytes": 175656
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\group_disjoint_label_prevalence.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\group_disjoint_label_prevalence.csv",
+      "size_bytes": 2717
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\group_disjoint_leakage_by_group_first_linker.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\group_disjoint_leakage_by_group_first_linker.csv",
+      "size_bytes": 805395
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\group_disjoint_master_split.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\group_disjoint_master_split.csv",
+      "size_bytes": 7587368
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\master_with_linker_keys.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\master_with_linker_keys.csv",
+      "size_bytes": 7525215
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\split_audit\\split_audit_summary.json",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\data\\source\\split_audit\\split_audit_summary.json",
+      "size_bytes": 1323
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\attention.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\attention.py",
+      "size_bytes": 5178
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\attention_label_image.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\attention_label_image.py",
+      "size_bytes": 11132
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\attention_label_label.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\attention_label_label.py",
+      "size_bytes": 11030
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\backbone.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\backbone.py",
+      "size_bytes": 12408
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\baselines.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\baselines.py",
+      "size_bytes": 10063
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\build_notebook.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\build_notebook.py",
+      "size_bytes": 55445
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\checkpointing.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\checkpointing.py",
+      "size_bytes": 3564
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\compare_plots.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\compare_plots.py",
+      "size_bytes": 5689
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\data.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\data.py",
+      "size_bytes": 17696
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\evaluation.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\evaluation.py",
+      "size_bytes": 9295
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\experiments.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\experiments.py",
+      "size_bytes": 13777
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\inference.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\inference.py",
+      "size_bytes": 5040
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\label_groups.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\label_groups.py",
+      "size_bytes": 5979
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\label_label_plots.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\label_label_plots.py",
+      "size_bytes": 8923
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\loss.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\loss.py",
+      "size_bytes": 17607
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\masking.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\masking.py",
+      "size_bytes": 8001
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\ml_vit.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\ml_vit.py",
+      "size_bytes": 27610
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\optim.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\optim.py",
+      "size_bytes": 9459
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\plotting.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\plotting.py",
+      "size_bytes": 6255
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\seeding.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\seeding.py",
+      "size_bytes": 2144
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\train.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\src\\vista\\train.py",
+      "size_bytes": 19869
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\vista code\\molecular_property_attention_analysis.ipynb",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\notebooks\\molecular_property_attention_analysis.ipynb",
+      "size_bytes": 74979
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\predictions\\test_predictions.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\predictions\\test_predictions.csv",
+      "size_bytes": 522779
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\predictions\\train_predictions.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\predictions\\train_predictions.csv",
+      "size_bytes": 2444643
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\predictions\\validation_predictions.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\predictions\\validation_predictions.csv",
+      "size_bytes": 531244
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\confusion_matrices.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\confusion_matrices.csv",
+      "size_bytes": 1103
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\test_metrics_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\test_metrics_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\test_metrics_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\test_metrics_per_label.csv",
+      "size_bytes": 2243
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\thresholds.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\thresholds.csv",
+      "size_bytes": 607
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\validation_metrics_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\validation_metrics_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\metrics\\validation_metrics_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\metrics\\validation_metrics_per_label.csv",
+      "size_bytes": 2163
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\report_predictions_metrics_figures_configs\\configs\\experiment_config.json",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\configs\\experiment_config.json",
+      "size_bytes": 484
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\baseline_auprc.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\baseline_auprc.csv",
+      "size_bytes": 1119
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\comparison_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\comparison_overall.csv",
+      "size_bytes": 926
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\comparison_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\comparison_per_label.csv",
+      "size_bytes": 11693
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\resnet50_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\resnet50_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\resnet50_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\resnet50_per_label.csv",
+      "size_bytes": 2278
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\shared_backbone_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\shared_backbone_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\shared_backbone_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\shared_backbone_per_label.csv",
+      "size_bytes": 2273
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\shared_cnn_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\shared_cnn_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\shared_cnn_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\shared_cnn_per_label.csv",
+      "size_bytes": 2273
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\single_label_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\single_label_overall.csv",
+      "size_bytes": 545
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\single_label_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\single_label_per_label.csv",
+      "size_bytes": 2233
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\small_cnn_overall.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\small_cnn_overall.csv",
+      "size_bytes": 543
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\baselines_CSV\\small_cnn_per_label.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\baselines\\small_cnn_per_label.csv",
+      "size_bytes": 2274
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\01_Aromaticity_qmof_9216\\qmof_9216.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\01_Aromaticity_qmof_9216\\qmof_9216.npz",
+      "size_bytes": 2005
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\01_Aromaticity_qmof_9216\\qmof_9216.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\01_Aromaticity_qmof_9216\\qmof_9216.pdf",
+      "size_bytes": 366644
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\01_Aromaticity_qmof_9216\\qmof_9216_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\01_Aromaticity_qmof_9216\\qmof_9216_meta.txt",
+      "size_bytes": 243
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\02_Polarity_qmof_7773\\qmof_7773.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\02_Polarity_qmof_7773\\qmof_7773.npz",
+      "size_bytes": 2003
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\02_Polarity_qmof_7773\\qmof_7773.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\02_Polarity_qmof_7773\\qmof_7773.pdf",
+      "size_bytes": 407399
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\02_Polarity_qmof_7773\\qmof_7773_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\02_Polarity_qmof_7773\\qmof_7773_meta.txt",
+      "size_bytes": 234
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696.npz",
+      "size_bytes": 2001
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696.pdf",
+      "size_bytes": 306064
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\03_Hydrogen-Bond Donors_qmof_4696\\qmof_4696_meta.txt",
+      "size_bytes": 226
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777.npz",
+      "size_bytes": 2006
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777.pdf",
+      "size_bytes": 326342
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\04_Hydrogen-Bond Acceptors_qmof_4777\\qmof_4777_meta.txt",
+      "size_bytes": 235
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\05_Charge Present_qmof_1679\\qmof_1679.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\05_Charge Present_qmof_1679\\qmof_1679.npz",
+      "size_bytes": 2004
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\05_Charge Present_qmof_1679\\qmof_1679.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\05_Charge Present_qmof_1679\\qmof_1679.pdf",
+      "size_bytes": 293265
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\05_Charge Present_qmof_1679\\qmof_1679_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\05_Charge Present_qmof_1679\\qmof_1679_meta.txt",
+      "size_bytes": 221
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030.npz",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030.npz",
+      "size_bytes": 2006
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030.pdf",
+      "size_bytes": 340286
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030_meta.txt",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\06_Planarity (Single-Ring)_qmof_1030\\qmof_1030_meta.txt",
+      "size_bytes": 234
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\chemical_interpretation\\main_success_6panel\\manifest.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\reference_current_results\\selected_attention\\manifest.csv",
+      "size_bytes": 2449
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\2\\Figures\\Main\\figure2_dataset_summary.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure2_current\\figure2_dataset_summary.csv",
+      "size_bytes": 143
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\2\\Figures\\Main\\figure2_jaccard_cooccurrence.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure2_current\\figure2_jaccard_cooccurrence.csv",
+      "size_bytes": 2016
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\2\\Figures\\Main\\figure2_label_prevalence_by_split.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure2_current\\figure2_label_prevalence_by_split.csv",
+      "size_bytes": 2479
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\2\\Figures\\Main\\figure2_positive_support_by_split.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure2_current\\figure2_positive_support_by_split.csv",
+      "size_bytes": 1158
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\3\\Figures\\Main\\figure3_overall_model_metrics.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure3_current\\figure3_overall_model_metrics.csv",
+      "size_bytes": 504
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\3\\Figures\\Main\\figure3_per_label_f1_matrix.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure3_current\\figure3_per_label_f1_matrix.csv",
+      "size_bytes": 1138
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\3\\Figures\\Main\\figure3_support_vs_f1.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure3_current\\figure3_support_vs_f1.csv",
+      "size_bytes": 1085
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\5\\Figures\\Main\\figure5_conditional_label_preference_matrix.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure5_current\\figure5_conditional_label_preference_matrix.csv",
+      "size_bytes": 2047
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\5\\Figures\\Main\\figure5_directed_label_attention_effect_matrix.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure5_current\\figure5_directed_label_attention_effect_matrix.csv",
+      "size_bytes": 2056
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\5\\Figures\\Main\\figure5_mean_label_attention_matrix.csv",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\source_data\\figure5_current\\figure5_mean_label_attention_matrix.csv",
+      "size_bytes": 2333
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\main\\figure1_workflow_architecture.png",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\current_main\\figure1_workflow_architecture.png",
+      "size_bytes": 4677624
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\main\\figure2_dataset_label_landscape.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\current_main\\figure2_dataset_label_landscape.pdf",
+      "size_bytes": 101588
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\main\\figure3_model_benchmark.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\current_main\\figure3_model_benchmark.pdf",
+      "size_bytes": 83757
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\main\\figure4_chemical_attention_success.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\current_main\\figure4_chemical_attention_success.pdf",
+      "size_bytes": 2136085
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\figures\\main\\figure5_label_label_attention.pdf",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\figures\\current_main\\figure5_label_label_attention.pdf",
+      "size_bytes": 90608
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\scripts\\02_validate_and_freeze.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\scripts\\validate_dataset.py",
+      "size_bytes": 16010
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\scripts\\unpack_images.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\scripts\\unpack_images.py",
+      "size_bytes": 1857
+    },
+    {
+      "source": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\Vista\\Vista_Inventory\\VISTA_PHASE_A_COMPLETE_PACKAGE\\scripts\\fetch_zenodo_data.py",
+      "destination": "D:\\UNIVERSITY\\PROJECTS\\MEHRDAD\\vista-mof-linker-vision\\scripts\\fetch_zenodo_data.py",
+      "size_bytes": 1438
+    }
+  ]
+}

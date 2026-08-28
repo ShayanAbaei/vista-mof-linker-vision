@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use VISTA or its accompanying dataset, please cite the associated VISTA paper and dataset record."
+title: "VISTA: Chemically Auditable Vision Transformers for Multi-Label Annotation of MOF Linker Functionality"
+type: software
+authors:
+  - family-names: "Abi"
+    given-names: "Amirhossein"
+  - family-names: "Abaei"
+    given-names: "Shayan"
+  - family-names: "Elahi"
+    given-names: "Amir"
+  - family-names: "Smit"
+    given-names: "Berend"
+  - family-names: "Asgari"
+    given-names: "Mehrdad"
+repository-code: "https://github.com/ShayanAbaei/vista-mof-linker-vision"
