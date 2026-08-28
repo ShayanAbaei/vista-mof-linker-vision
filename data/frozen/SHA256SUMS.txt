@@ -1,0 +1,8 @@
+244c3d29bea6ed90c7b12c2a48eda2277ad24a3b41a64088e7256b349523c578  D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\qmof_29.zip
+4d99cd8802b81ee1b49968d77ef95ec9169eb9fc7dd95d0c838cb4393b0a102b  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\source\Data.csv
+711546ef39a86cace9cdd1a8ed1d455c4f34e8348f572be2617b67dcd4cd107d  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\source\split_audit\current_split_master_with_linker_keys.csv
+dc5ec1659d2b6513902b77facc7c7988440e4e876caa0e3cc9e42dd71fd3b5f3  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\source\split_audit\group_disjoint_master_split.csv
+df81dfc31286ef8dd50276277263dd0c782ca1309fd0344c48c87838830bf6d9  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\frozen\current_sample_split.csv
+2a166974b31cf2fda5f417ed7f50fda3251bbca4919b8b6e4f6aac15c34ab164  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\frozen\canonical_group_disjoint_split.csv
+e8ab4aa6ec817cad1dcb935fea29e4088359c7e9b0dd5926558c680d2fc60afa  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\frozen\label_definitions.yaml
+6470c8fa7826ab46c901655275e2a18a020637d02bf4bb0815e7b6c76bfde01a  D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision\data\frozen\image_manifest.csv

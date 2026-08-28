@@ -1,0 +1,43 @@
+version: "1.0"
+source: "Deterministic RDKit-derived proxy labels used by VISTA"
+labels:
+  hydrophobicity:
+    display_name: "Hydrophobicity proxy"
+    rule: "Crippen logP > 2.5"
+    limitation: "Thresholded free-linker logP; not framework/solvent/guest hydrophobicity."
+  polarity:
+    display_name: "Polarity proxy"
+    rule: "TPSA > 90"
+    limitation: "Global topological polar surface-area threshold; not a local polarity map."
+  flexibility:
+    display_name: "Flexibility proxy"
+    rule: "Rotatable bonds > 5"
+    limitation: "Free-linker rotatable bonds do not equal framework flexibility."
+  aromaticity:
+    display_name: "Aromaticity present"
+    rule: "At least one aromatic atom"
+    limitation: "Does not quantify aromatic extent."
+  h_bond_donors:
+    display_name: "H-bond donor proxy"
+    rule: "RDKit HBD count > 2"
+    limitation: "Does not encode crystal accessibility."
+  h_bond_acceptors:
+    display_name: "H-bond acceptor proxy"
+    rule: "RDKit HBA count > 2"
+    limitation: "Does not encode crystal accessibility."
+  planarity_single_ring:
+    display_name: "Single-ring proxy"
+    rule: "RDKit ring count = 1"
+    limitation: "This is not a geometric planarity calculation."
+  macrocycle_gt6_rings:
+    display_name: "Ring-rich (>6 rings) proxy"
+    rule: "RDKit ring count > 6"
+    limitation: "This is not a universal macrocycle definition."
+  charge_present:
+    display_name: "Charge present"
+    rule: "Net formal charge != 0"
+    limitation: "Depends on linker SMILES/protonation representation."
+  conjugation_present:
+    display_name: "Conjugation present"
+    rule: "Any bond order > 1.5"
+    limitation: "Simplified proxy; not full orbital-delocalization analysis."
