@@ -1,0 +1,42 @@
+run:
+  experiment_name: shared_swin_groupdisjoint
+  seed: 17
+data:
+  manifest: data/frozen/canonical_group_disjoint_split.csv
+  image_dir: data/images_224
+  image_size: 224
+  require_canonical_disjoint: true
+model:
+  architecture_source: src/vista/baselines.py::SharedCNNMultiLabel
+  builder: src/vista/baselines.py::build_shared_cnn
+  backbone: swin_b
+  pretrained: true
+  n_labels: 10
+  pooling: AdaptiveAvgPool2d(1x1)+Flatten
+  heads: 10 independent Linear(1024,1)
+  extra_layer_norm: false
+  label_tokens: false
+  transformer: false
+augmentation:
+  chemistry_safe: false
+training:
+  epochs: 50
+  batch_size: 32
+  num_workers: 0
+  patience: 10
+  frozen_epochs: 10
+  base_lr: 0.0001
+  backbone_lr_ratio: 0.1
+  weight_decay: 0.01
+  warmup_start_factor: 0.1
+  warmup_epochs: 10
+  min_lr_ratio: 0.01
+  selection_metric: macro_auprc
+loss:
+  type: frequency_adapted_asl
+  clip: 0.005
+  frequencies_from: train
+evaluation:
+  threshold_source: validation
+  threshold_objective: f1
+  threshold_grid_points: 200

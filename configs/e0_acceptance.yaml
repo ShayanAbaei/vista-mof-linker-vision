@@ -1,0 +1,23 @@
+policy:
+  name: engineering_reproduction_gate_v1
+  purpose: detect material inconsistency before strict GPU runs
+  historical_split: current_sample_split
+  seed: 42
+  manual_shayan_review_required_even_if_numeric_gate_passes: true
+
+tolerances:
+  macro_auprc_abs: 0.010
+  macro_f1_abs: 0.015
+  per_label_auprc_max_abs: 0.050
+
+historical_reference:
+  test_macro_auprc: 0.987924
+  test_macro_f1: 0.960403
+  best_validation_epoch: 44
+
+hard_requirements:
+  - exact_frozen_manifest
+  - exact_architecture_config
+  - validation_only_thresholds
+  - no_test_tuning
+  - output_contract_pass
