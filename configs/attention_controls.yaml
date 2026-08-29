@@ -1,0 +1,30 @@
+seed: 42
+occlusion:
+  fraction_7x7_cells: 0.2
+  max_positive_pairs_per_label: 100
+  random_repeats: 3
+  fill_rgb:
+  - 255
+  - 255
+  - 255
+rendering_stability:
+  rotations_deg:
+  - -5
+  - 5
+  translations_px:
+  - - -5
+    - 0
+  - - 5
+    - 0
+  - - 0
+    - -5
+  - - 0
+    - 5
+  scales:
+  - 0.97
+  - 1.03
+  padding_px:
+  - 8
+  line_width_filters:
+  - thicker
+  - thinner
