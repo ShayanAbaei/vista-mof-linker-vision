@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Reproducible VISTA training entry point over a frozen manifest.
+"""Train a new VISTA image model against a selected frozen split manifest.
 
-This wraps the existing historical VISTA modules without changing their model
-implementation. It is intended for E0 sample-level reproduction and E1 strict
-canonical-first-linker-disjoint training.
-
-Full GPU execution should only begin after Phase-B smoke tests are green.
+The implementation uses the archived VISTA architecture and writes a new,
+provenance-tracked output directory including checkpoints, predictions, metrics
+and validation-derived thresholds. A new run is NOT a recovered historical
+checkpoint; historical recorded scores are archived separately.
 """
 from __future__ import annotations
 

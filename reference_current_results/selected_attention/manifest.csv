@@ -1,7 +1,7 @@
-panel_index,label,sample_id,split,case_type,prob,threshold,pdf_path_original,npz_path_original,panel_folder
-1,Aromaticity,qmof_9216,test,true_positive,0.99054635,0.5075226130653266,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Aromaticity\pdf\qmof_9216.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Aromaticity\data\qmof_9216.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\01_Aromaticity_qmof_9216
-2,Polarity,qmof_7773,test,true_positive,0.9986681,0.512537688442211,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Polarity\pdf\qmof_7773.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Polarity\data\qmof_7773.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\02_Polarity_qmof_7773
-3,Hydrogen-Bond Donors,qmof_4696,test,true_positive,0.97615075,0.5877638190954774,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Hydrogen-Bond Donors\pdf\qmof_4696.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Hydrogen-Bond Donors\data\qmof_4696.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\03_Hydrogen-Bond Donors_qmof_4696
-4,Hydrogen-Bond Acceptors,qmof_4777,test,true_positive,0.9905668,0.286859296482412,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Hydrogen-Bond Acceptors\pdf\qmof_4777.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Hydrogen-Bond Acceptors\data\qmof_4777.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\04_Hydrogen-Bond Acceptors_qmof_4777
-5,Charge Present,qmof_1679,test,true_positive,0.9952856,0.4373115577889447,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Charge Present\pdf\qmof_1679.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Charge Present\data\qmof_1679.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\05_Charge Present_qmof_1679
-6,Planarity (Single-Ring),qmof_1030,test,true_positive,0.9961926,0.5977939698492463,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Planarity (Single-Ring)\pdf\qmof_1030.pdf,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\attention_label_image\test\Planarity (Single-Ring)\data\qmof_1030.npz,D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista\chemical_interpretation\main_success_6panel\06_Planarity (Single-Ring)_qmof_1030
+panel_index,label,sample_id,split,case_type,prob,threshold
+1,Aromaticity,qmof_9216,test,true_positive,0.99054635,0.5075226130653266
+2,Polarity,qmof_7773,test,true_positive,0.9986681,0.512537688442211
+3,Hydrogen-Bond Donors,qmof_4696,test,true_positive,0.97615075,0.5877638190954774
+4,Hydrogen-Bond Acceptors,qmof_4777,test,true_positive,0.9905668,0.286859296482412
+5,Charge Present,qmof_1679,test,true_positive,0.9952856,0.4373115577889447
+6,Planarity (Single-Ring),qmof_1030,test,true_positive,0.9961926,0.5977939698492463
