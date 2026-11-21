@@ -4,7 +4,7 @@ The heavy molecular-image archive is intentionally stored outside normal Git.
 
 ## Frozen dataset record
 
-Zenodo DOI: `10.5281/zenodo.22141996`  
+Zenodo DOI: `10.5281/zenodo.22141996`
 Zenodo record: https://zenodo.org/records/22141996
 
 ## Local folders
@@ -27,5 +27,3 @@ The strict frozen manifest must contain 9,414 rows with train/validation/test co
 ## QMOF provenance
 
 The data derive from QMOF/MOFid-linked records. QMOF data are CC BY 4.0 and require attribution. VISTA adds linker selection, canonicalization, 2D image rendering, deterministic proxy labels, and split/audit products.
-
-

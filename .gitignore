@@ -1,71 +1,36 @@
-# Python
+# Generated runtime files and local caches
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Environments
-.venv/
-venv/
-env/
-conda-bld/
-
-# IDE / OS
-.vscode/
-.idea/
+.ipynb_checkpoints/
+*.log
+*.tmp
+*.bak
+*.swp
 .DS_Store
-Thumbs.db
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
 
-# Heavy raw/extracted data
+# Images and archives are distributed on Zenodo
 data/raw/
 data/images_224/
-*.7z
-*.tar
-*.tar.gz
 
-# Do not casually commit arbitrary project ZIP backups
-*.zip
-
-# Models / serialization
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.joblib
-*.pkl
-*.pickle
-
-# Training outputs
+# Local model training outputs
 runs/
 outputs/
 checkpoints/
-logs/
-wandb/
 tensorboard/
-slurm-*.out
-slurm-*.err
+wandb/
 
-# Generated plotting outputs
-figures/generated/
-
-# LaTeX build products
-*.aux
-*.bbl
-*.blg
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-
-# Secrets / credentials
-.env
-.env.*
-*.pem
-*.key
-credentials*
-secrets*
-
-# VISTA Phase C local caches/logs
+# Temporary analysis outputs
 phase_c_results/cache/
 phase_c_results/logs/
+
+*.zip
+*.tar
+*.tar.gz

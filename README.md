@@ -1,130 +1,105 @@
-# VISTA
+# VISTA — Vision Transformers for MOF Linker Annotation
 
-**VISTA: Chemically Auditable Vision Transformers for Multi-Label Annotation of MOF Linker Functionality**
+**Scientific source code, the frozen 2D-linker dataset, and machine-readable research results.**
 
-> **Development status:** final pre-EPFL handover review. Phase A/B/C and stable manuscript cleanup are complete; GPU scientific execution has not started.
+VISTA is a multi-label computer-vision framework for predicting ten chemically defined *proxy labels* from standardized two-dimensional depictions of selected metal–organic framework (MOF) linkers. Its image model uses an ImageNet-pretrained Swin-B backbone followed by a six-layer label-token Transformer. Ground-truth labels were generated with documented RDKit rules; they are **not measurements of framework adsorption, stability, or other bulk MOF properties**.
 
-VISTA is an image-based multi-label learning framework for standardized two-dimensional depictions of organic linkers derived from the QMOF/MOFid ecosystem. The frozen benchmark contains 9,414 linker-image records corresponding to 5,727 unique canonical first-linker SMILES and ten deterministic RDKit-derived binary proxy labels.
+The repository archives the results of the **original GPU-trained VISTA experiment**, together with the corresponding predictions, validation-derived thresholds, training records, attention examples, and completed Morgan-fingerprint and RDKit-descriptor comparisons. It also supplies frozen data manifests and scripts for independent checking and subsequent model training.
 
-## Scientific status
+## Key results
 
-Completed: frozen data/manifests/Zenodo archive, canonical-first-linker-disjoint split, reproducibility/code freeze, historical current-split VISTA reference preservation, Phase-C CPU baselines/Tanimoto/bootstrap, and stable pre-EPFL manuscript cleanup.
+| Record or metric | Value |
+|:--|--:|
+| 2D linker-image records | **9,414** |
+| Unique canonical first-linker SMILES | **5,727** |
+| Train / validation / test records | **6,590 / 1,412 / 1,412** |
+| Original VISTA test macro-AUPRC | **0.9879** |
+| Original VISTA test macro-AUROC | **0.9972** |
+| Original VISTA test macro-F1 | **0.9604** |
+| Canonical-disjoint Morgan logistic-regression test macro-AUPRC | **0.9258** |
 
-Still pending: E0 sample-level seed-42 reproduction on EPFL, strict VISTA seeds 17/42/123, strict shared-Swin seeds 17/42/123, one validation-selected GIN-family baseline, strict seed-42 embeddings/PCA/UMAP/attention controls, independent returned-result validation, and the final manuscript/release.
+**How to interpret the numbers:** VISTA was genuinely trained on GPU, but the reported image-model test scores come from the *historical sample-level split*. This split includes repeated canonical linker identities across training and evaluation; **630 historical test records have an exact canonical identity in the training data**. These scores must not be called unseen-linker generalization. The separately prepared **canonical-first-linker-disjoint split** has zero identity overlap, but only the completed *molecular* baselines—not a retrained VISTA image model—have been evaluated on it.
 
-Current sample-level VISTA values are retained only as **historical reference results**, not as evidence that the strict canonical-first-linker-disjoint experiment has already been completed.
+See [Results and evaluation scope](docs/RESULTS_AND_SCOPE.md) for comparisons, confidence intervals, and precise limitations.
 
-## EPFL collaborator: start here
+## Quick start: inspect the archived results
 
-1. Environment: [`docs/EPFL_ENVIRONMENT.md`](docs/EPFL_ENVIRONMENT.md)
-2. Full run/monitor/return protocol: [`docs/EPFL_HANDOVER.md`](docs/EPFL_HANDOVER.md)
-3. GPU runtime gate: [`docs/GPU_RUNTIME_GATE.md`](docs/GPU_RUNTIME_GATE.md)
-4. Output contract: [`docs/OUTPUT_CONTRACT.md`](docs/OUTPUT_CONTRACT.md)
-5. Fresh-clone rehearsal: [`docs/FRESH_CLONE_REHEARSAL.md`](docs/FRESH_CLONE_REHEARSAL.md)
-6. Exact launch order: [`launch/README_GPU.md`](launch/README_GPU.md)
-
-The frozen order is: runtime gate → E0 seed42 → **STOP for Shayan approval** → strict VISTA → exact shared-Swin → validation-selected GIN-family → seed-42 exports/controls → repeated-seed summaries → automated return bundle.
-
-Do not tune on the strict test set, select a best seed, reconstruct the split, or silently change the frozen scientific matrix.
-
-## Data
-
-The frozen dataset is archived separately on Zenodo.
-
-**Zenodo DOI:** `10.5281/zenodo.22141996`  
-**Zenodo record:** https://zenodo.org/records/22141996
-
-The heavy molecular-image archive is intentionally not tracked in normal Git history.
+Clone the repository and run the lightweight, standard-library evidence check (no GPU required):
 
 ```bash
+git clone https://github.com/ShayanAbaei/vista-mof-linker-vision.git
+cd vista-mof-linker-vision
+python scripts/verify_public_results.py
+```
+
+The check verifies selected archived values and file contracts. It **does not retrain** the historical GPU model.
+
+Available source data:
+
+- [Historical image-model predictions](reference_current_results/predictions/) and [metrics / thresholds](reference_current_results/metrics/)
+- [Selected attention source arrays](reference_current_results/selected_attention/)
+- [Completed molecular baseline metrics](phase_c_results/metrics/), [per-row predictions](phase_c_results/source_data/) and [cluster-bootstrap intervals](phase_c_results/bootstrap/)
+- [Current and identity-disjoint split manifests and label definitions](data/frozen/)
+
+## Download the 2D molecular images
+
+The 9,414-image dataset is deposited on Zenodo: **[DOI 10.5281/zenodo.22141996](https://doi.org/10.5281/zenodo.22141996)**. Large image files are not duplicated in Git.
+
+```bash
+conda env create -f environment.yml
+conda activate vista
 python scripts/fetch_zenodo_images.py --repo-root .
-python scripts/pre_epfl_rehearsal.py --repo-root . --require-images
 ```
 
-See [`data/README.md`](data/README.md).
+The downloader checks the archived image ZIP against its frozen hash and expected content. See [Dataset and labels](docs/DATA_AND_LABELS.md).
 
-## Strict split
+## Reproduce analyses or train a new model
 
-The canonical-first-linker-disjoint split prevents the same canonical first-linker SMILES from occurring in more than one of train, validation, and test.
+For the recorded molecular baselines, install RDKit in an isolated environment and run:
 
-Frozen counts: train 6,590; validation 1,412; test 1,412; total 9,414.
-
-It tests generalization to **unseen canonical first-linker identities**. It is not a scaffold-disjoint or complete-chemical-dissimilarity split. Final strict reporting includes both sample-weighted and unique-canonical-linker metrics.
-
-## Ten deterministic proxy labels
-
-1. Hydrophobicity — Crippen logP > 2.5
-2. Polarity — TPSA > 90
-3. Flexibility — rotatable bonds > 5
-4. Aromaticity — at least one aromatic atom
-5. H-bond donors — RDKit HBD count > 2
-6. H-bond acceptors — frozen historical RDKit NumHBA semantics > 2
-7. Single-ring proxy — ring count = 1
-8. Ring-rich (>6 rings) proxy — ring count > 6
-9. Charge present — net formal charge != 0
-10. Conjugation present — any bond order > 1.5
-
-These labels are reproducible **proxy annotations**, not experimental measurements or universal chemical definitions.
-
-## Repository structure
-
-- `data/` — frozen source/manifests and validation artifacts.
-- `src/vista/` — authoritative VISTA source and frozen baseline implementations.
-- `reference_current_results/` — historical current-split predictions, metrics, and provenance.
-- `phase_c_results/` — completed local CPU baseline/Tanimoto/bootstrap outputs.
-- `configs/` — frozen VISTA/shared-Swin/GIN/dimred/control configs.
-- `scripts/` — validation, training, export, post-processing, and handover utilities.
-- `launch/` — direct Linux two-GPU launch queue.
-- `docs/` — reproducibility, holdout, environment, handover, and output-contract documentation.
-- `manuscript/` — manuscript-state documentation; the verified working Overleaf project is maintained separately until final integration.
-
-## Reproducibility gates
-
-Local/static:
 ```bash
-python scripts/pre_epfl_rehearsal.py --repo-root .
+python -m pip install rdkit
+python scripts/phase_c/run_phase_c.py --stage preflight
+python scripts/phase_c/run_phase_c.py --profile standard --stage all
 ```
 
-Fresh clone:
-```bash
-python scripts/fresh_clone_rehearsal.py --repo-url https://github.com/ShayanAbaei/vista-mof-linker-vision.git --ref <exact-reviewed-ref> --fetch-images
-```
+**Run analyses in a disposable clone** because these commands generate output files. The CPU baseline pipeline uses validation-only model selection and thresholds.
 
-EPFL GPU:
-```bash
-bash launch/00_runtime_gate.sh
-```
+Model source is under [`src/vista/`](src/vista/) and the training entry point is [`scripts/train_vista.py`](scripts/train_vista.py). Training a new model requires a compatible PyTorch/torchvision CUDA stack, a GPU, and pretrained Swin-B weights. The original model's trained checkpoint is not distributed; archived predictions and summary metrics are provided instead.
 
-The GPU runtime gate must pass before any scientific GPU job.
+Read the [Reproducibility and usage guide](docs/REPRODUCIBILITY.md) before attempting a new GPU training run.
 
-## Run outputs and return bundle
+## Frozen annotation targets
 
-Every final model run returns config/command/Git/environment provenance, history, checkpoint, validation-derived thresholds, validation/test predictions, metrics, confusion matrices, and runtime metadata. Strict runs additionally return unique-canonical metrics.
+| Label | RDKit-derived binary rule |
+|:--|:--|
+| `hydrophobicity` | Crippen MolLogP > 2.5 |
+| `polarity` | TPSA > 90 |
+| `flexibility` | Rotatable-bond count > 5 |
+| `aromaticity` | At least one aromatic atom |
+| `h_bond_donors` | H-bond donor count > 2 |
+| `h_bond_acceptors` | Frozen historical NumHBA v2.0.1 count > 2 |
+| `planarity_single_ring` | Ring count = 1 (a **single-ring proxy**, not measured planarity) |
+| `macrocycle_gt6_rings` | Ring count > 6 (a **ring-rich proxy**, not necessarily a macrocycle) |
+| `charge_present` | Non-zero net formal charge |
+| `conjugation_present` | At least one bond with order > 1.5 |
 
-After all runs/exports:
-```bash
-bash launch/99_build_return_bundle.sh
-```
+The original label names and rules are preserved in [`data/frozen/label_definitions.yaml`](data/frozen/label_definitions.yaml). Pay particular attention to historical H-bond-acceptor descriptor semantics when using newer RDKit versions.
 
-This creates the structured `VISTA_EPFL_RETURN_v1` research object for independent validation and later plotting/manuscript work.
+## Repository contents
 
-## Embeddings and figures
+| Directory | Contents |
+|:--|:--|
+| [`src/vista/`](src/vista/) | Vision model, training, inference, loss and analysis source |
+| [`data/`](data/) | Frozen input tables, split manifests, validation and label metadata |
+| [`reference_current_results/`](reference_current_results/) | Recorded original GPU-model predictions, metrics and attention cases |
+| [`phase_c_results/`](phase_c_results/) | Completed Morgan / RDKit benchmarks, similarity audits and uncertainty |
+| [`figures/`](figures/) | Original figure files and machine-readable figure sources |
+| [`scripts/`](scripts/) | Data download, integrity checks and computational entry points |
+| [`docs/`](docs/) | Dataset, results and reproducibility documentation |
 
-Strict VISTA seed 42 is the reference model for the five frozen latent representations, canonical aggregates, train-fit PCA/UMAP coordinates, strict attention, negative-label controls, occlusion, rendering stability, Tanimoto-stratified performance, and the optional predeclared MOF-level consequence screen.
+## Citation and attribution
 
-Final publication figures must be regenerated from machine-readable source data rather than preserved only as PDFs/PNGs.
+See [`CITATION.cff`](CITATION.cff) for the original five-author citation metadata. Cite the frozen [VISTA Zenodo dataset](https://doi.org/10.5281/zenodo.22141996), and credit the QMOF sources: Rosen *et al.*, *Matter* (2021), [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015); and Rosen *et al.*, *npj Computational Materials* (2022), [10.1038/s41524-022-00796-6](https://doi.org/10.1038/s41524-022-00796-6).
 
-## QMOF provenance
-
-VISTA is derived from QMOF/MOFid-linked data. QMOF data are distributed under CC BY 4.0. Users should cite:
-
-- Rosen et al., *Matter* (2021), DOI: 10.1016/j.matt.2021.02.015
-- Rosen et al., *npj Computational Materials* (2022), DOI: 10.1038/s41524-022-00796-6
-
-## Citation
-
-A final paper citation will be added after publication. See [`CITATION.cff`](CITATION.cff) for project authorship metadata.
-
-## License
-
-Dataset licensing is documented with the Zenodo record. A software license for the code will be finalized with the code authors before the repository is made public.
+**Use and licensing:** Dataset rights and attribution are documented with Zenodo and the upstream sources. No software license is asserted here without agreement of the relevant rights holders; public visibility alone does not grant unrestricted reuse rights.

@@ -21,8 +21,8 @@ from typing import Iterable
 
 import pandas as pd
 
-DEFAULT_SOURCE = r"D:\UNIVERSITY\PROJECTS\MEHRDAD\Vista"
-DEFAULT_REPO = r"D:\UNIVERSITY\PROJECTS\MEHRDAD\vista-mof-linker-vision"
+DEFAULT_SOURCE = str(Path(__file__).resolve().parents[1] / "data" / "raw")
+DEFAULT_REPO = str(Path(__file__).resolve().parents[1])
 
 LABELS = [
     "hydrophobicity",
@@ -264,6 +264,8 @@ def main():
     current_csv = source_data / "split_audit" / "current_split_master_with_linker_keys.csv"
     strict_csv = source_data / "split_audit" / "group_disjoint_master_split.csv"
     image_zip = src / "qmof_29.zip"
+    if not image_zip.exists():
+        image_zip = src / "vista_images_9414.zip"
 
     print("=" * 80)
     print("VISTA PHASE A — DATA VALIDATION")

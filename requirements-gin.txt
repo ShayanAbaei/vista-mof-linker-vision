@@ -1,5 +1,0 @@
-# Install only in a clone of the frozen core EPFL environment.
-
-torch_geometric==2.7.0
-
-rdkit==2026.3.3
